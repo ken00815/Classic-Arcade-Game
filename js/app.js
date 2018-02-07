@@ -55,7 +55,7 @@ Player.prototype.handleInput = function(key) {
       this.x += 101;
       break;
   }
-}
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
