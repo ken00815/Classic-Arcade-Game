@@ -65,6 +65,8 @@ var Engine = (function(global) {
     function init() {
         reset();
         lastTime = Date.now();
+        enemiesSpawn(60);
+        speedFactor();
         main();
     }
 
@@ -79,7 +81,7 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
+        checkCollisions();
     }
 
     /* This is called by the update function and loops through all of the
@@ -119,7 +121,7 @@ var Engine = (function(global) {
             row, col;
 
         // Before drawing, clear existing canvas
-        ctx.clearRect(0,0,canvas.width,canvas.height)
+        ctx.clearRect(0,0,canvas.width,canvas.height);
 
         /* Loop through the number of rows and columns we've defined above
          * and, using the rowImages array, draw the correct image for that
@@ -154,6 +156,9 @@ var Engine = (function(global) {
         });
 
         player.render();
+        victory.render();
+        timeOut.render();
+        
     }
 
     /* This function does nothing but it could have been a good place to
@@ -173,7 +178,9 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/char-boy.png',
+        'images/char-pink-girl.png',
+        'images/Heart.png'
     ]);
     Resources.onReady(init);
 
@@ -182,4 +189,5 @@ var Engine = (function(global) {
      * from within their app.js files.
      */
     global.ctx = ctx;
+
 })(this);

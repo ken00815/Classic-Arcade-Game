@@ -1,6 +1,14 @@
-frontend-nanodegree-arcade-game
-===============================
+# Classic Arcade Game - Find the pink girl in the river
+## How to run
+1. Open Google Chrome
+2. Click "ctrl + O"
+3. Open "index.html"
+4. Refresh the game if you want to start again
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## How to play
+* use arrows key to control the boy
+* Don't touch the bugs passing by
+* Arrive the river without touch ANY bugs for your victory
+* If you succeed, you can meet your _lovely girlfriend_ :)
+* If the last bug passed, the whole world will **turn into stone** and you **LOSE!**
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
